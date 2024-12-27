@@ -1,0 +1,109 @@
+
+.analytics h3{
+    border-bottom: 2px dashed gray;
+    display: inline-block;
+}
+.quick-tutorial .sub-heading {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+.quick-tutorial .sub-heading p {
+  width: calc(100% - 20px);
+}
+.banner .banner-inner {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: -6px;
+}
+.banner .banner-inner .Polaris-Box {
+  flex: 1;
+}
+.banner .banner-inner .Polaris-Box h2 {
+  color: #e3e3e3;
+}
+.banner .banner-inner .Polaris-Box p {
+  color: #e3e3e3d9;
+  padding: 10px 0px;
+}
+.banner .swiper-pagination-bullet{background-color: #707070;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{background-color: #FFFFFF;}
+.banner .close_banner {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  cursor: pointer;
+  right: 20px;
+}
+
+.banner .close_banner svg {
+  color: #e3e3e3;
+}
+
+
+.dashboard-slider  .swiper-pagination{
+  bottom: -3px!important;
+}
+
+.dashboard-slider .swiper-pagination-bullet{background-color: #969696;}
+.dashboard-slider .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color: #000000;}
+
+
+.rate_us .rating_star {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0px;
+}
+.rate_us .rating_star .Polaris-Icon {
+  margin: unset;
+}
+
+.rate_us .rating_star .Polaris-Icon svg{fill:#ECC02D;}
+
+.more_apps .Polaris-CalloutCard__DismissImage {
+  display: none;
+}
+
+.more_apps .Polaris-CalloutCard--hasDismiss {
+  padding: 0;
+}
+
+.more_apps .prod_card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  
+}
+
+.prod_card .prod_cnt_col button {
+  text-decoration: none;
+  color: inherit;
+}
+
+.prod_card p .Polaris-Icon {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.prod_card p .Polaris-Icon svg{fill: #616161;}
+
+
+.footer{display: flex;align-items: center; justify-content: center; flex-wrap: wrap; gap:20px;}
+.footer ul{list-style: none; display: flex; align-items: center ;gap:15px; padding: 0px;}
+
+.footer ul button{
+    display: flex;align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:200px) and (max-width:767px) {
+  .banner .banner-inner .Polaris-Box:first-child{
+    display: none;
+  }
+
+  .banner .swiper-pagination
+  {position: static!important; text-align: center!important; width: auto!important; transform: unset!important; padding-bottom: 10px!important;}
+}
