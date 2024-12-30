@@ -4,7 +4,7 @@ const HelpCenter = () => {
   return (
     <div className="help_center" style={{ paddingBlock: "var(--p-space-200)" }}>
       <Card>
-        <Text as="h2" variant="headingMg">
+        <Text as="h2" variant="headingMd">
           Help Center
         </Text>
         <div style={{ paddingBlock: "var(--p-space-400)" }}>

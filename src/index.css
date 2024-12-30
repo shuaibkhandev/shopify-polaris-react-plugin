@@ -1,7 +1,6 @@
-
-.analytics h3{
-    border-bottom: 2px dashed gray;
-    display: inline-block;
+.analytics h3 {
+  border-bottom: 2px dashed gray;
+  display: inline-block;
 }
 .quick-tutorial .sub-heading {
   display: flex;
@@ -28,8 +27,12 @@
   color: #e3e3e3d9;
   padding: 10px 0px;
 }
-.banner .swiper-pagination-bullet{background-color: #707070;}
-.swiper-pagination-bullet.swiper-pagination-bullet-active{background-color: #FFFFFF;}
+.banner .swiper-pagination-bullet {
+  background-color: #707070;
+}
+.banner .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
 .banner .close_banner {
   position: absolute;
   z-index: 1;
@@ -42,15 +45,24 @@
   color: #e3e3e3;
 }
 
-
-.dashboard-slider  .swiper-pagination{
-  bottom: -3px!important;
+.request_feature .Polaris-CalloutCard {
+  gap: 50px;
 }
 
-.dashboard-slider .swiper-pagination-bullet{background-color: #969696;}
-.dashboard-slider .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color: #000000;}
+.dashboard-slider .swiper-pagination {
+  bottom: -3px !important;
+}
 
+.dashboard-slider .swiper-pagination-bullet {
+  background-color: #969696;
+}
+.dashboard-slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #000000;
+}
 
+.rate_us .Polaris-LegacyCard {
+  background-color: #eaf1f9;
+}
 .rate_us .rating_star {
   display: flex;
   justify-content: flex-start;
@@ -58,9 +70,30 @@
 }
 .rate_us .rating_star .Polaris-Icon {
   margin: unset;
+  width: 30px;
+  height: 30px;
+}
+.rate_us .Polaris-Text--root:nth-child(2) {
+  color: rgb(108, 163, 234);
+}
+.rate_us .Polaris-Text--root.Polaris-Text--headingSm {
+  color: rgb(9, 9, 86);
 }
 
-.rate_us .rating_star .Polaris-Icon svg{fill:#ECC02D;}
+.rate_us .rating_star .Polaris-Icon svg {
+  fill: #ecc02d;
+}
+
+.rate_us .Polaris-CalloutCard {
+  flex-direction: row-reverse;
+  gap: 50px;
+}
+.rate_us .Polaris-CalloutCard .Polaris-CalloutCard__Buttons {
+  text-align: end;
+}
+.rate_us .Polaris-CalloutCard--hasDismiss {
+  padding-right: 0 !important;
+}
 
 .more_apps .Polaris-CalloutCard__DismissImage {
   display: none;
@@ -74,7 +107,6 @@
   display: flex;
   justify-content: flex-start;
   gap: 15px;
-  
 }
 
 .prod_card .prod_cnt_col button {
@@ -87,23 +119,41 @@
   vertical-align: bottom;
 }
 
-.prod_card p .Polaris-Icon svg{fill: #616161;}
+.prod_card p .Polaris-Icon svg {
+  fill: #616161;
+}
 
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding-top: 20px;
+}
 
-.footer{display: flex;align-items: center; justify-content: center; flex-wrap: wrap; gap:20px;}
-.footer ul{list-style: none; display: flex; align-items: center ;gap:15px; padding: 0px;}
-
-.footer ul button{
-    display: flex;align-items: center;
-    justify-content: center;
+.footer h3{
+  font-size: 16px;
+  color: rgb(72, 72, 72);
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  padding: 0px;
+  margin: 0;
 }
 
 
-@media screen and (min-width:200px) and (max-width:767px) {
-  .banner .banner-inner .Polaris-Box:first-child{
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .banner .banner-inner .Polaris-Box:first-child {
     display: none;
   }
 
-  .banner .swiper-pagination
-  {position: static!important; text-align: center!important; width: auto!important; transform: unset!important; padding-bottom: 10px!important;}
+  .banner .swiper-pagination {
+    position: static !important;
+    text-align: center !important;
+    width: auto !important;
+    transform: unset !important;
+    padding-bottom: 10px !important;
+  }
 }

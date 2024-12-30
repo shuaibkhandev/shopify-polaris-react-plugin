@@ -1,7 +1,7 @@
 import {Link, Text} from "@shopify/polaris"
 const Footer = () => {
   return (
-    <div className='footer' style={{paddingBlock:"var(--p-space-600)" ,borderTop: '1px solid #0000001A', marginTop: 'var(--p-space-400)'}}>
+    <div className='footer' style={{height:"120px", borderTop: '1px solid #0000001A'}}>
         <Text as='h3' variant='headingMd'>Chat with our experts</Text>
         <ul>
             <li>

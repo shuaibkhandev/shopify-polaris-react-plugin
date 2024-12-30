@@ -21,6 +21,57 @@ const QuickTutorials = () => {
 
   const handleChange = useCallback(() => setActive(!active), [active]);
 
+  const tutorialsData = [
+    {
+      id: 1,
+      title: "General Settings",
+      description:
+        "In this, you’ll learn how to show options selection based on customer",
+      video: {
+        url: "/videos/banner_video.mp4",
+        thumbnailUrl:
+          "https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850",
+        alt: "video 1",
+      },
+    },
+    {
+      id: 2,
+      title: "General Settings",
+      description:
+        "In this, you’ll learn how to show options selection based on customer",
+        video: {
+          url: "/videos/banner_video.mp4",
+          thumbnailUrl:
+            "https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850",
+          alt: "video 1",
+        },
+    },
+    {
+      id: 3,
+      title: "General Settings",
+      description:
+        "In this, you’ll learn how to show options selection based on customer",
+        video: {
+          url: "/videos/banner_video.mp4",
+          thumbnailUrl:
+            "https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850",
+          alt: "video 1",
+        },
+    },
+    {
+      id: 4,
+      title: "General Settings",
+      description:
+        "In this, you’ll learn how to show options selection based on customer",
+        video: {
+          url: "/videos/banner_video.mp4",
+          thumbnailUrl:
+            "https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850",
+          alt: "video 1",
+        },
+    },
+  ];
+
   return (
     <div
       className="quick-tutorial"
@@ -47,81 +98,37 @@ const QuickTutorials = () => {
             clickable: true,
           }}
           breakpoints={{
-              240: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-              },
-              600: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
-            }}
+            240: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            600: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           modules={[FreeMode, Pagination]}
           className="dashboard-slider"
           style={{ paddingBlock: "var(--p-space-400)" }}
         >
-          <SwiperSlide>
-            <MediaCard
-              portrait
-              title="Turn your side-project into a business"
-              primaryAction={{ content: "Learn More", onAction: () => {} }}
-              description="In this course, you’ll learn how the Kular family turned their mom’s recipe book into a global business."
-              popoverActions={[{ content: "Dismiss", onAction: () => {} }]}
-            >
-              <VideoThumbnail
-                videoLength={80}
-                thumbnailUrl="https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850"
-                onClick={handleChange}
-              />
-            </MediaCard>
-          </SwiperSlide>
-          <SwiperSlide>
-            <MediaCard
-              portrait
-              title="Turn your side-project into a business"
-              primaryAction={{ content: "Learn More", onAction: () => {} }}
-              description="In this course, you’ll learn how the Kular family turned their mom’s recipe book into a global business."
-              popoverActions={[{ content: "Dismiss", onAction: () => {} }]}
-            >
-              <VideoThumbnail
-                videoLength={80}
-                thumbnailUrl="https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850"
-                onClick={handleChange}
-              />
-            </MediaCard>
-          </SwiperSlide>
-          <SwiperSlide>
-            <MediaCard
-              portrait
-              title="Turn your side-project into a business"
-              primaryAction={{ content: "Learn More", onAction: () => {} }}
-              description="In this course, you’ll learn how the Kular family turned their mom’s recipe book into a global business."
-              popoverActions={[{ content: "Dismiss", onAction: () => {} }]}
-            >
-              <VideoThumbnail
-                videoLength={80}
-                thumbnailUrl="https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850"
-                onClick={handleChange}
-              />
-            </MediaCard>
-          </SwiperSlide>
-          <SwiperSlide>
-            <MediaCard
-              portrait
-              title="Turn your side-project into a business"
-              primaryAction={{ content: "Learn More", onAction: () => {} }}
-              description="In this course, you’ll learn how the Kular family turned their mom’s recipe book into a global business."
-              popoverActions={[{ content: "Dismiss", onAction: () => {} }]}
-            >
-              <VideoThumbnail
-                videoLength={80}
-                thumbnailUrl="https://burst.shopifycdn.com/photos/business-woman-smiling-in-office.jpg?width=1850"
-                onClick={handleChange}
-              />
-            </MediaCard>
-            {active && (
+          {tutorialsData.map((data) => (
+            <SwiperSlide key={data.id}>
+              <MediaCard
+                portrait
+                title={data.title}
+                primaryAction={{ content: "Learn More", onAction: () => {} }}
+                description={data.description}
+              >
+                <VideoThumbnail
+                  videoLength={80}
+                  thumbnailUrl={data.video?.thumbnailUrl}
+                  onClick={handleChange}
+                />
+              </MediaCard>
+
+              {active && (
               <Modal
                 open={active}
                 onClose={handleChange}
@@ -141,7 +148,10 @@ const QuickTutorials = () => {
                 </Modal.Section>
               </Modal>
             )}
-          </SwiperSlide>
+            </SwiperSlide>
+
+          ))}
+
         </Swiper>
       </Card>
     </div>
