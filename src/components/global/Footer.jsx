@@ -1,4 +1,8 @@
 import {Link, Text} from "@shopify/polaris"
+import WhatsappImg from "/images/whatsapp.svg"
+import SkypeImg from "/images/skype.svg"
+import CalendarImg from "/images/calendar.svg"
+import MailImg from "/images/mail.svg"
 const Footer = () => {
   return (
     <div className='footer' style={{height:"120px", borderTop: '1px solid #0000001A'}}>
@@ -6,29 +10,33 @@ const Footer = () => {
         <ul>
             <li>
                 <Link>
-                    <img src="/images/whatsapp.png" style={{
+                    <img src={WhatsappImg} style={{
                     objectFit: "cover",
+                    width:"30px",
                     objectPosition: "center"}} />
                 </Link>
             </li>
             <li>
                 <Link>
-                    <img src="/images/skype.png" style={{
+                    <img src={SkypeImg} style={{
                     objectFit: "cover",
+                    width:"30px",
                     objectPosition: "center"}} />
                 </Link>
             </li>
             <li>
                 <Link>
-                    <img src="/images/mail.png"  style={{
+                    <img src={MailImg}  style={{
                     objectFit: "cover",
+                    width:"30px",
                     objectPosition: "center"}}/>
                 </Link>
             </li>
             <li>
                 <Link>
-                    <img src="/images/calendar.png"  style={{
+                    <img src={CalendarImg}  style={{
                     objectFit: "cover",
+                    width:"30px",
                     objectPosition: "center"}}/>
                 </Link>
             </li>

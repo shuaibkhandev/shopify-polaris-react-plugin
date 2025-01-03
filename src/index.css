@@ -1,7 +1,119 @@
+/* Chat widget CSS */
+.chat-experts {
+  position: absolute;
+  right: 5px;
+  top: 80%;
+  z-index: 99;
+}
+
+.chat-experts #button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(48 48 48);
+  box-shadow: none;
+  margin-left: auto;
+  z-index: 9;
+}
+
+.chat-experts .Polaris-Icon {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.chat-experts #button .Polaris-Icon {
+  filter: brightness(4);
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.chat-experts #button .Polaris-Icon {
+  font-size: 20px;
+}
+
+.chat-experts .Polaris-Box #notification {
+  position: absolute;
+  z-index: 99;
+  bottom: 37px;
+  right: 0px;
+  color: white;
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-experts .card-wrapper {
+  position: absolute;
+  right: 10px;
+  bottom: 60px;
+  width: 300px;
+}
+.chat-experts .card-wrapper .Polaris-BlockStack {
+  background-color: black;
+  margin-bottom: 10px;
+  color: white;
+  padding: 20px;
+}
+
+.chat-experts .card-wrapper .Polaris-Box:first-child {
+  padding: 0;
+}
+.chat-experts .card-wrapper .Polaris-Box .Polaris-Box {
+  margin: 0px 4px;
+
+  border-radius: 10px;
+}
+.chat-experts .card-wrapper .Polaris-Box .Polaris-ResourceList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Polaris-Avatar__Image{
+  object-fit: revert!important;
+}
+
+.chat-experts .card-wrapper .Polaris-Box .Polaris-ResourceItem__ListItem {
+  background: #f3f3f3;
+  border-radius: 10px;
+  border: none !important;
+}
+
+.chat-experts .card-wrapper .Polaris-Box .Polaris-ResourceItem:hover {
+  border-radius: 10px;
+  background-color: #f3f3f3;
+}
+
+.chat-experts .card-wrapper .Polaris-Box .Polaris-InlineGrid {
+  align-items: center;
+}
+
+.chat-experts .card-wrapper .Polaris-Box > h5 {
+  padding-bottom: 7px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .chat-experts .Polaris-Icon {
+    width: 1.75rem !important;
+    height: 1.75rem !important;
+  }
+  .chat-experts .Polaris-ShadowBevel{
+    border-radius: 10px;
+  }
+}
+
+/* Dashboard CSS */
+
 .analytics h3 {
   border-bottom: 2px dashed gray;
   display: inline-block;
 }
+
 .quick-tutorial .sub-heading {
   display: flex;
   justify-content: flex-start;
@@ -131,7 +243,7 @@
   padding-top: 20px;
 }
 
-.footer h3{
+.footer h3 {
   font-size: 16px;
   color: rgb(72, 72, 72);
 }
@@ -142,7 +254,6 @@
   padding: 0px;
   margin: 0;
 }
-
 
 @media screen and (min-width: 200px) and (max-width: 767px) {
   .banner .banner-inner .Polaris-Box:first-child {

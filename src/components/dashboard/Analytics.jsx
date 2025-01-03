@@ -107,7 +107,7 @@ const Analytics = () => {
             <AnalyticsCard
               title="Load More Clicks"
               value="50"
-              tooltip="Here you can check the total number of 'load more' button clicks by visitors on collection pages"
+              tooltip="Here you can check the total number of 'load  more' button clicks by visitors on collection pages"
             />
           </Grid.Cell>
           <Grid.Cell columnSpan={{ xs: 6, sm: 3, md: 3, lg: 3, xl: 3 }}>
