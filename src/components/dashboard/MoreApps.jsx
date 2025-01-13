@@ -16,7 +16,7 @@ const MoreApps = () => {
           Increase sessions, engage shoppers and promote your products by adding
           more apps.
         </p>
-        <div style={{ paddingBlock: "var(--p-space-400)" }}>
+        <div style={{ paddingBlock: "var(--p-space-400)"}}>
           <Grid>
             <Grid.Cell columnSpan={{ xs: 6, sm: 3, md: 3, lg: 4 }}>
               <div

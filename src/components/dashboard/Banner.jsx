@@ -12,7 +12,7 @@ const Banner = () => {
     <div className="banner" style={{ paddingBlock: "var(--p-space-200)", position:"relative" }}>
       <Swiper
         pagination={{
-          dynamicBullets: true,
+          clickable: true,
         }}
         modules={[Pagination]}
         className="banner_slider"

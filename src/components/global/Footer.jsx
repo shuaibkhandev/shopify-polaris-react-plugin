@@ -5,7 +5,7 @@ import CalendarImg from "/images/calendar.svg"
 import MailImg from "/images/mail.svg"
 const Footer = () => {
   return (
-    <div className='footer' style={{height:"120px", borderTop: '1px solid #0000001A'}}>
+    <div className='footer' style={{height:"120px", borderTop: '1px solid #0000001A', marginTop:"50px"}}>
         <Text as='h3' variant='headingMd'>Chat with our experts</Text>
         <ul>
             <li>

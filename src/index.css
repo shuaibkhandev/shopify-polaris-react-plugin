@@ -73,8 +73,8 @@
   gap: 10px;
 }
 
-.Polaris-Avatar__Image{
-  object-fit: revert!important;
+.Polaris-Avatar__Image {
+  object-fit: revert !important;
 }
 
 .chat-experts .card-wrapper .Polaris-Box .Polaris-ResourceItem__ListItem {
@@ -102,7 +102,7 @@
     width: 1.75rem !important;
     height: 1.75rem !important;
   }
-  .chat-experts .Polaris-ShadowBevel{
+  .chat-experts .Polaris-ShadowBevel {
     border-radius: 10px;
   }
 }
@@ -267,4 +267,121 @@
     transform: unset !important;
     padding-bottom: 10px !important;
   }
+}
+
+/* Plains */
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.plans .plan_card {
+  width: 90%;
+  margin: auto;
+}
+.plans .plan_card h2 {
+  margin-bottom: 5px;
+}
+
+.plans .plan_card p {
+  margin-bottom: 20px;
+}
+
+.plans .plan_card button {
+  margin-top: 20px;
+}
+
+.plans .plan_card .Polaris-Box {
+  margin-bottom: 8px;
+}
+
+.plans .plan_card .Polaris-Badge {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.plans #active_button {
+  background-color: #e3e3e3;
+}
+.plans .plan_card #current_plan_button {
+  background-color: #e3e3e3;
+}
+
+@media screen and (max-width: 767px) {
+  .plans {
+    width: 95% !important;
+  }
+  .plans .plan_card {
+    width: 100%;
+  }
+}
+
+/* FAQ */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq .Polaris-Icon {
+  margin: 0 !important;
+  margin-left: auto !important;
+}
+
+.faq p {
+  margin: 10px 0;
+}
+.faq button {
+  background-color: #e3e3e3;
+}
+.faq button:hover {
+  background-color: #e3e3e3;
+}
+/* Recommendataions */
+
+.more__apps h2 {
+  margin-bottom: 5px;
+}
+
+.more__apps .prod_card {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.more__apps .prod_cnt_col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.more__apps .prod_cnt_col a {
+  font-weight: 500;
+}
+
+.rec_hero_sec .swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.rec_hero_sec .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 20px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.rec_hero_sec .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
