@@ -1,7 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper/modules';
 const sliderImages = [
   {
     id: 1,
@@ -28,7 +29,8 @@ const HeroSec = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      navigation={true}
+      modules={[Pagination, Navigation]}
       className="mySwiper"
     >
       {sliderImages.map((image) => (

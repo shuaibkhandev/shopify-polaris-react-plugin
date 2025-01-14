@@ -269,7 +269,7 @@
   }
 }
 
-/* Plains */
+/* Plans */
 .plans {
   display: flex;
   flex-direction: column;
@@ -368,7 +368,7 @@
 .rec_hero_sec .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: transparent;
   border-radius: 20px;
 
   /* Center slide text vertically */
@@ -376,6 +376,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  padding-bottom:50px
 }
 
 .rec_hero_sec .swiper-slide img {
@@ -384,4 +385,103 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+}
+
+
+.rec_hero_sec .swiper-button-next{
+  top: 350px;
+  z-index: 99;
+  background-color: #E3E3E3 ;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+
+}
+
+.rec_hero_sec .swiper-button-prev{
+  left: auto;
+  right: 35px;
+  z-index: 999999999999;
+  top: 350px;
+  background-color:#E3E3E3 ;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.rec_hero_sec .swiper-button-prev::after, .rec_hero_sec .swiper-button-next::after{
+  font-size: 16px!important;
+  font-weight: bolder;
+  color: #4A4A4A;
+ 
+
+}
+
+
+
+
+
+/* User Guide */
+
+.on_this_page ul li{
+  color: #2C6FD9;
+  text-decoration: underline;
+  margin-bottom: 10px!important;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+.banner .Polaris-BlockStack  .Polaris-Box:first-child{
+  background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.banner .Polaris-Banner.Polaris-Banner--withinPage{
+  box-shadow: none;
+  border: none;
+  background-color: #FEF8DB;
+}
+.banner .Polaris-BlockStack  .Polaris-Box:last-child{
+  background-color: transparent;
+  padding-block: 0px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+}
+
+.general_seting .Polaris-BlockStack .Polaris-Box{
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.general_seting ul{
+  margin-top: 15px;
+}
+
+.general_seting ul li{
+  margin-bottom: 10px!important;
+}
+
+.general_seting button{
+  background-color: #E3E3E3;
+}
+
+.general_seting button:hover{
+  background-color: #E3E3E3;
+}
+
+
+@media screen and (max-width:767px) {
+  .app_tour_guide iframe{
+    height: 300px;
+  }
+}
+
+
+@media screen and (max-width:400px) {
+  .app_tour_guide iframe{
+    height: 240px;
+  }
 }

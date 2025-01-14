@@ -6,7 +6,7 @@ import ChatExperts from "./components/ChatExperts";
 import Plans from "./components/plans";
 import FAQ from "./components/faq"
 import Recommendations from "./components/recommendations";
-
+import UserGuide from "./components/userGuide"
 
 const App = () => {
   return (
@@ -25,6 +25,7 @@ const App = () => {
             <Route path="/plans" element={<Plans />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/recommendations" element={<Recommendations />} />
+            <Route path="/user_guide" element={<UserGuide />} />
           </Routes>
           <Footer />
         </Router>

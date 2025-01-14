@@ -7,12 +7,14 @@ import FeatureReq from "./FeatureReq";
 import RateUs from "./RateUs";
 import MoreApps from "./MoreApps";
 import HelpCenter from "./HelpCenter";
+
 const index = () => {
   return (
     <Page
       title="Dashboard"
       subtitle="Here’s a guide to get started. As your business grows, you’ll get fresh tips and insights here."
     >
+  
       <Analytics />
       <SetupGuide />
       <QuickTutorials />
